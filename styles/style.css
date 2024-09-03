@@ -1,0 +1,24 @@
+html {
+}
+
+header {
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+big,
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+}
+
+footer {
+}
+
+.yellow {
+    background-color: gray;
+}

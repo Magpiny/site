@@ -1,0 +1,21 @@
+/* Medium Screens (Large Tablets and Laptops) */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    html {
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+        background-color: black;
+        display: flex;
+    }
+    .container {
+        width: 70%; /* Adjust layout for moderate container width on large tablets */
+        background: red;
+    }
+    .nav-img {
+        width: 24px;
+        height: 24px;
+        border-radius: 0.8rem;
+}

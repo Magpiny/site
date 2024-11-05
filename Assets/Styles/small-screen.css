@@ -1,0 +1,85 @@
+/* Small devices */
+@media only screen and (max-width: 640px) {
+    /* CSS rules specific for small screens */
+    html {
+        font-size: 16dppx;
+    }
+    body {
+        margin: 0;
+        color: #00008b;
+    }
+    .container {
+        width: 100%; /* Adjust layout for moderate container width on large tablets */
+        height: 100%;
+        background-color: lightblue;
+        padding: 0.5rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: big;
+    }
+
+    .nav-item {
+        padding-right: 24px;
+    }
+    .nav-img {
+        display: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 0.8rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    big > a {
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        padding: 2rem;
+    }
+
+    .homepage-banner-img {
+        width: 80vw;
+        height: 48vh;
+        border-radius: 1.2rem;
+        border-width: 0px;
+    }
+
+    /* Footer styles */
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #year {
+        padding-right: 1.8rem;
+    }
+    .twitter-logo {
+        height: 24px;
+        width: 24px;
+        border-radius: 0.8rem;
+        padding-left: 2rem;
+    }
+}

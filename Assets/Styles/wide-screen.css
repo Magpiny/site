@@ -1,0 +1,16 @@
+/* Extra Large Screens (Large Desktops) */
+@media only screen and (min-width: 1008px) {
+    /* CSS rules specific for extra large screens */
+    html{
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 50%; /* Adjust layout for even narrower container width on large desktops */
+        background-color: yellow;
+    }
+    .nav-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 1.2rem;
+}

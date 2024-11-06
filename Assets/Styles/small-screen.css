@@ -4,21 +4,21 @@
     html {
         font-size: 16dppx;
         font-family: Georgia, "Times New Roman", Times, serif;
+        margin: 0px;
     }
     body {
-        margin: 0;
+        margin: 0px;
         color: #00008b;
     }
     .container {
-        width: 100%; /* Adjust layout for moderate container width on large tablets */
+        width: 100vw; /* Adjust layout for moderate container width on large tablets */
         height: 100%;
         background-color: lightblue;
-        padding: 0.5rem;
     }
 
     header {
         display: flex;
-        flex-direction: row;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
     }
@@ -27,10 +27,11 @@
         text-decoration: none;
         font-weight: bolder;
         font-size: big;
+        color: #00008b;
     }
 
     .nav-item {
-        padding-right: 24px;
+        padding-right: 18px;
     }
     .nav-img {
         display: none;
@@ -49,7 +50,7 @@
     big > a {
         text-decoration: none;
         color: white;
-        font-size: larger;
+        font-size: 12pt;
         font-weight: bolder;
         font-style: italic;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -128,12 +129,16 @@
         padding: 1.48rem;
     }
 
+    h2,
+    h3 {
+        text-align: center;
+    }
+
     .web-item,
     .lesson-item {
         flex: 1;
         padding-right: 2.4rem;
-        margin-left: 0.5rem;
-        margin-right: 1rem;
+        padding-left: 2.4rem;
     }
 
     .lesson-item {

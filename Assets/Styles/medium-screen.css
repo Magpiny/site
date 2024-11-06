@@ -5,17 +5,57 @@
     html {
         font-size: 16px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
     }
     body {
         background-color: black;
         display: flex;
     }
     .container {
-        width: 70%; /* Adjust layout for moderate container width on large tablets */
-        background: red;
+        width: 80vw; /* Adjust layout for moderate container width on large tablets */
+        background: lightblue;
+        margin: 0 auto;
     }
     .nav-img {
         width: 24px;
         height: 24px;
         border-radius: 0.8rem;
+    }
+    .homepage-banner-img {
+        width: 60vw;
+        border-radius: 1.2rem;
+    }
+
+    .about {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+    }
+
+    .web-tech-img,
+    .dtp-img,
+    .db-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 1.2rem;
+    }
+
+    .pl-img {
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .web-img,
+    .dtp-icon,
+    .db-image,
+    .lssn-img {
+        width: 10vw;
+        height: 8vh;
+    }
 }

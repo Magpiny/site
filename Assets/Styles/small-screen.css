@@ -3,6 +3,7 @@
     /* CSS rules specific for small screens */
     html {
         font-size: 16dppx;
+        font-family: Georgia, "Times New Roman", Times, serif;
     }
     body {
         margin: 0;
@@ -42,6 +43,9 @@
         flex-direction: row;
         list-style: none;
     }
+    big {
+        padding-left: 15px;
+    }
     big > a {
         text-decoration: none;
         color: white;
@@ -66,11 +70,84 @@
         border-width: 0px;
     }
 
+    #tech-article {
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .web-tech-img {
+        width: 20px;
+        height: 20px;
+        background-color: darkblue;
+        border-radius: 0.8rem;
+        margin-left: 4rem;
+    }
+    .dtp-img {
+        width: 32px;
+        height: 24px;
+        margin-left: 4rem;
+    }
+
+    .pl-img,
+    .web-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 5px;
+    }
+
+    .dtp-icon,
+    .db-image {
+        width: 48px;
+        height: 48px;
+    }
+
+    .db-img {
+        width: 32px;
+        height: 32px;
+        margin-left: 4rem;
+    }
+
+    .lssn-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .lang-container,
+    .web-container,
+    .dtp-container,
+    .db-container,
+    .lesson-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lang-item,
+    .dtp-item,
+    .db-item {
+        flex: 2;
+        padding: 1.48rem;
+    }
+
+    .web-item,
+    .lesson-item {
+        flex: 1;
+        padding-right: 2.4rem;
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .lesson-item {
+        margin-bottom: 3rem;
+    }
+
     /* Footer styles */
     footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        font-size: big;
     }
 
     #year {
@@ -81,5 +158,6 @@
         width: 24px;
         border-radius: 0.8rem;
         padding-left: 2rem;
+        color: red;
     }
 }

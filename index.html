@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Magpiny website with blog and portfolio"
+            content="Magpiny's personal website"
         />
         <meta name="author" content="Wanjare Samuel" />
         <meta
@@ -69,6 +69,7 @@
 
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="https://blog.magpiny.dev" target="_blank">BLOG</a>
+                        <img class="nav-img" src="./Assets/Icons/gitbook.svg" alt="blog-icon">
                       </li>
 
                       <li class="nav-item">
@@ -94,7 +95,7 @@
                     <section class="homepage">
                         <h2>Welcome to Magpiny's site</h2>
                         <img class="homepage-banner-img" src="./Assets/Images/Designer(1).jpeg" alt="homepage-banner">
-                        <p>
+                        <p class="hero-desc">
                             Magpiny is an experienced software engineer who has worked with a couple of web technologies, programming
                             languages and desktop application technologies producing quality work for both companies and clients.
                         </p>
@@ -102,14 +103,123 @@
 
                 </article>
 
-                <article class="tech" id="id">
-                    <section>
+                <article id="tech-article">
+                    <section  class="tech">
                         <h2>Technologies</h2>
+
                         <h3>Programming Languages</h3>
-                        <h3>Web Technologies</h3>
-                        <h3>Desktop Technologies</h3>
-                        <h3>Datatabases</h3>
-                        <h3>Currentky Learning ...</h3>
+                        <div class="lang-container">
+                            <div class="lang-item">
+                                <h4>HTML</h4>
+                                <img class="pl-img" src="./Assets/Icons/html-5.svg" alt="HTML5-ICON" />
+                                <p class="description">My favourite markup language for the web</p>
+                            </div>
+
+                            <div class="lang-item">
+                                <h4>CSS</h4>
+                                <img class="pl-img" src="./Assets/Icons/css-3-logo.svg" alt="CSS3-LOGO" />
+                                <p class="description">This website is styled in vanilla CSS3, zero frameworks</p>
+                            </div>
+
+                            <div class="lang-item">
+                                <h4>JavaScript</h4>
+                                <img class="pl-img" src="./Assets/Icons/javascript-logo.svg" alt="JAVASCRIPT-LOGO" />
+                                <p class="description">JavaScript is my favourite programming language</p>
+                            </div>
+
+                            <div class="lang-item">
+                                <h4>Python</h4>
+                                <img class="pl-img" src="./Assets/Icons/python-logo.svg" alt="PYTHON-LOGO" />
+                                <p class="description">The best language for scientific computing at the moment.</p>
+                            </div>
+
+                            <div class="lang-item">
+                                <h4>C++<h4>
+                                <img class="pl-img" src="./Assets/Icons/c-plus-plus-logo.svg" alt="c-plus-plus-logo" />
+                                <p class="description">My favourite programming language at the moment</p>
+                            </div>
+
+                            <div class="lang-item">
+                                <h4>RUST</h4>
+                                <img class="pl-img" src="./Assets/Icons/rust-logo.svg" alt="RUST-PROGRAMMING-LANGUAGE-LOGO" />
+                                <p class="description">"I bet I'll never understand lifetimes"</p>
+                            </div>
+                        </div>
+                        <h3>Web Technologies <img class="web-tech-img" src="./Assets/Icons/html-tag.svg" alt="web-development-icon" /></h3>
+
+                        <div class="web-container">
+                            <div class="web-item">
+                                <h4>React</h4>
+                                <img class="web-img" src="./Assets/Icons/reactjs-icon.svg" alt="reactjs-icon" />
+                                <p>Reactjs is still my favourite frontend library, because i'm yet to try others</p>
+                            </div>
+                            <div class="web-item">
+                                <h4>Nextjs</h4>
+                                <img class="web-img" src="./Assets/Icons/nextjs-icon.svg" alt="next-js-logo">
+                                <p>My blog is written entirely in Nextjs, i like it</p>
+                            </div>
+                            <div class="web-item">
+                                <h4>Django</h4>
+                                <img class="web-img" src="./Assets/Icons/django-icon.svg" alt="django-web-framework-logo">
+                                <p>My favourite python web framework for backend and fullstack websites</p>
+                            </div>
+                            <div class="web-item">
+                                <h4>Expressjs</h4>
+                                <img class="web-img" src="./Assets/Icons/expressjs-logo.svg" alt="expressjs-icon">
+                                <p>
+                                    My favourite JavaScript backend library. I like the fact that there's a million ways of messing
+                                    up in this library, a weakness and a strength for that matter.
+                                </p>
+                            </div>
+                        </div>
+                        <h3>Desktop Technologies <img class="dtp-img" src="./Assets/Icons/desktop-logo.svg" alt="desktop-icon"></h3>
+                        <div class="dtp-container">
+                            <div class="dtp-item">
+                                <h4>wxWidgets</h4>
+                                <img class="dtp-icon" class="dtp-img" src="./Assets/Icons/wxwidgets-icon.webp" alt="wx-widgets-icon">
+                                <p>My favourite C++ GUI library, the closest GUI lib to C++</p>
+                            </div>
+
+                            <div class="dtp-item">
+                                <h4>Qt</h4>
+                                <img class="dtp-icon" src="./Assets/Icons/qt-logo.svg" alt="qt-icon">
+                                <p>Qt (cute) as cute as its name sounds is my other worthy alternative for C++ GUI</p>
+                            </div>
+                        </div>
+                        <h3>Databases <img class="db-img" src="./Assets/Icons/databases-icon.svg" alt="database-icon"></h3>
+                        <div class="db-container">
+                            <div class="db-item">
+                                <h4>SQLite</h4>
+                                <img class="db-image" src="./Assets/Icons/sqlite-icon.svg" alt="sqlite-logo">
+                                <p>My favourite database esp for local persistent storage</p>
+                            </div>
+
+                            <div class="db-item">
+                                <h4>MySQL</h4>
+                                <img class="db-image" src="./Assets/Icons/mysql-logo.svg" alt="mysql-logo">
+                                <p>Equally good for almost every use case</p>
+                            </div>
+
+                            <div class="db-item">
+                                <h4>Postgresql</h4>
+                                <img class="db-image" src="./Assets/Icons/postgresql-logo.svg" alt="postgresql-mascot">
+                                <p>I use this frequently in my production apps</p>
+                            </div>
+                        </div>
+                        <h3>Currently Learning ...</h3>
+                        <div class="lesson-container">
+                            <div class="lesson-item">
+                                <h4>Docker</h4>
+                                <img class="lssn-img" src="./Assets/Icons/docker-logo.svg" alt="docker-mascot">
+                                <p>Learning containerization technologies, images and container orchestration</p>
+                            </div>
+
+                            <div class="lesson-item">
+                                <h4>Bash</h4>
+                                <img class="lssn-img" src="./Assets/Icons/bash-icon.svg" alt="bash-programming-logo">
+                                <p>I guess I'll never know bash completely</p>
+                            </div>
+                        </div>
                     </section>
                 </article>
             </main>
@@ -118,7 +228,11 @@
                 &COPY;
                 <span id="year"></span>
                 MAGPINY &TRADE;
-                <span id="twitter"><a href="https://x.com/mag_piny"><img class="twitter-logo" src="./Assets/Icons/twitter-logo.svg" alt="twitter-logo"></a></span>
+                <span id="twitter">
+                    <a href="https://x.com/mag_piny" title="@mag_piny twitter handle">
+                        <img class="twitter-logo" src="./Assets/Icons/x-icon.svg" alt="twitter-logo">
+                    </a>
+                </span>
             </footer>
         </div>
 

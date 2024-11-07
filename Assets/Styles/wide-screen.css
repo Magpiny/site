@@ -2,7 +2,7 @@
 @media only screen and (min-width: 1008px) {
     /* CSS rules specific for extra large screens */
     html {
-        font-size: 1.8rem;
+        font-size: 1.4vw;
         font-family:
             system-ui,
             -apple-system,
@@ -26,39 +26,51 @@
     .container {
         width: 70vw; /* Adjust layout for even narrower container width on large desktops */
         background-color: lightblue;
+        padding: 1.2rem;
         margin: 0 auto;
     }
 
     big {
-        padding-left: 4rem;
-        padding-top: 3.6vh;
+        padding-left: 1rem;
+        padding-top: 1.8vh;
+        text-wrap: wrap;
+        text-wrap-style: pretty;
     }
     big > a {
         text-decoration: none;
-        font-size: larger;
+        font-size: 3vw;
         font-weight: bolder;
         color: snow;
     }
 
     .nav-img {
-        width: 32px;
-        height: 32px;
+        width: 3.4vw;
+        height: 2.5vh;
         border-radius: 1.2rem;
+    }
+
+    header {
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
     ul {
         display: flex;
+        /* flex-direction: row; */
+        text-wrap: wrap;
+        text-wrap-style: pretty;
         list-style: none;
-        margin-left: 18vw;
+        margin-left: 16.5vw;
+        padding-right: 1vw;
     }
 
     .nav-item {
-        padding-left: 2vw;
+        padding-right: 0.8vw;
     }
     .nav-link {
         text-decoration: none;
         color: #00008b;
-        font-size: large;
+        font-size: 1.2vw;
         font-weight: bolder;
     }
 
@@ -123,8 +135,8 @@
     .web-tech-img,
     .dtp-img,
     .db-img {
-        width: 12vw;
-        height: 9vh;
+        width: 10vw;
+        height: 8vh;
     }
 
     .twitter-logo {
@@ -138,6 +150,21 @@
 
     #twitter {
         padding-left: 4rem;
+    }
+
+    .floating-btn {
+        position: fixed; /* Make it fixed to the viewport */
+        bottom: 1.5vh; /* Position it 20px from the bottom */
+        right: 13.5vw; /* Position it 20px from the right */
+        background-color: var(
+            --complimentary-color
+        ); /* Button background color */
+        color: var(--danger); /* Button text color */
+        border: none; /* Remove default button border */
+        border-radius: 1.2vw;
+        padding: 10px; /* Add some padding */
+        font-size: 2.5vw; /* Increase font size */
+        cursor: pointer; /* Change cursor to a hand */
     }
 
     footer {

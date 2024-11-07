@@ -1,4 +1,9 @@
-html {
+:root {
+    --primary-color: #37afe1;
+    --secondary-color: #4cc9fe;
+    --tertiary-color: #f5f4b3;
+    --complimentary-color: #fffecb;
+    --danger: #ff0000;
 }
 
 header {
@@ -7,18 +12,25 @@ header {
     flex-direction: row;
 }
 
+html,
+body,
+container {
+    overflow-x: hidden;
+}
+
 big,
 nav {
     display: flex;
     flex-direction: column;
 }
 
-main {
-}
-
-footer {
-}
-
-.yellow {
-    background-color: gray;
+mark {
+    font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+    text-shadow: 3vw;
+    text-rendering: optimizeLegibility;
+    font-size: 12vw;
 }

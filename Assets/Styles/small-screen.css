@@ -2,7 +2,7 @@
 @media only screen and (max-width: 640px) {
     /* CSS rules specific for small screens */
     html {
-        font-size: 16dppx;
+        font-size: 2vw;
         font-family: Georgia, "Times New Roman", Times, serif;
         margin: 0px;
     }
@@ -143,6 +143,21 @@
 
     .lesson-item {
         margin-bottom: 3rem;
+    }
+
+    .floating-btn {
+        position: fixed; /* Make it fixed to the viewport */
+        bottom: 1.5vh; /* Position it 20px from the bottom */
+        right: 1.8vw; /* Position it 20px from the right */
+        background-color: var(
+            --complimentary-color
+        ); /* Button background color */
+        color: var(--danger); /* Button text color */
+        border: none; /* Remove default button border */
+        border-radius: 1.2vw;
+        padding: 10px; /* Add some padding */
+        font-size: 2.5vw; /* Increase font size */
+        cursor: pointer; /* Change cursor to a hand */
     }
 
     /* Footer styles */

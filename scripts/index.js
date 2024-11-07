@@ -1,6 +1,13 @@
-// my js file
-//
+$(function () {
+  let date = new Date().getFullYear();
+  $("#year").text(date);
+});
 
-let date = new Date().getFullYear();
-let yearcontent = document.getElementById("year");
-yearcontent.innerText = date;
+$(document).ready(function () {
+  $(".floating-btn").click(function () {
+    $(".container").remove();
+    $("body").html(
+      "<mark>What are you gonna do? &nbsp; Okay build yours I copy from you and Holla when you're done</mark>",
+    );
+  });
+});

@@ -32,7 +32,7 @@
 
     big {
         padding-left: 1rem;
-        padding-top: 1.8vh;
+        padding-top: 1.1vh;
         text-wrap: wrap;
         text-wrap-style: pretty;
     }
@@ -52,6 +52,10 @@
     header {
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+    header:hover {
+        box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
+        border-radius: 0.5rem;
     }
 
     ul {
@@ -174,5 +178,12 @@
         place-items: center;
         font-weight: bolder;
         font-size: larger;
+        bottom: 0.5vh;
+    }
+
+    footer:hover {
+        box-shadow: 0 3px 10px rgba(0 0 0 / 0.2);
+        padding: 0.5rem 2rem 0.4rem 2rem;
+        border-radius: 0.5rem;
     }
 }

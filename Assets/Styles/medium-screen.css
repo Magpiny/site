@@ -11,11 +11,14 @@
     body {
         background-color: var(--secondary-color);
         color: var(--primary-color);
+        scrollbar-color: var(--primary-color);
     }
     .container {
         width: 90vw; /* Adjust layout for moderate container width on large tablets */
         background: var(--tertiary-color);
         border-radius: 1.2vw;
+        border-color: var(--tertiary-color);
+        border-width: 8px;
         margin: 0 auto;
     }
 
@@ -70,9 +73,9 @@
         text-decoration: none;
     }
     .nav-img {
-        width: 2vw;
-        height: 2vh;
-        border-radius: 0.8rem;
+        width: 3.4vw;
+        height: 2.5vh;
+        border-radius: 1.2rem;
         padding-right: 2vw;
     }
 
@@ -165,6 +168,7 @@
     .db-item,
     .lesson-item {
         flex: 1;
+        text-wrap: wrap;
         padding: 1.5rem;
     }
 
@@ -190,6 +194,7 @@
         font-size: 2.5vw;
         background-color: var(--complimentary-color);
         color: var(--secondary-color);
+        padding: 0.5rem;
     }
 
     #year {

@@ -16,6 +16,8 @@ html,
 body,
 container {
     overflow-x: hidden;
+    scrollbar-width: 1vw;
+    scrollbar-color: var(--primary-color);
 }
 
 big,

@@ -1,43 +1,47 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy Static Website to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches:
+      - main
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .  # Publish the root directory since it's just HTML/CSS/JS files
+          # Optional: Force HTTPS
+          enable_jekyll: false
+          cname: yourdomain.com  # Remove or set to your domain if you have one
+
+      # Step 3: Post-deployment notification via email
+      - name: Send Email Notification
+        if: always()  # This will run even if previous steps fail
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: GitHub Pages Deployment Status - ${{ github.repository }} - ${{ github.sha }}
+          body: |
+            Deployment ${{ job.status }} for ${{ github.repository }}
+            
+            Commit: ${{ github.sha }}
+            Author: ${{ github.actor }}
+            Ref: ${{ github.ref }}
+            Workflow: ${{ github.workflow }}
+            Job: ${{ github.job }}
+            
+            View the deployment: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          to: magpinyb@gmail.com  # Change this to your email address
+          from: GitHub Actions  # This will show as the sender name
